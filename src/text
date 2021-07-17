@@ -1,0 +1,105 @@
+
+app.js codes
+
+
+// <h1> this is my react js applicatipn</h1>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Edit <code>src/App.js</code> and save to reload.
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header>
+    // </div>
+
+
+    // <div>
+    //   <Header name="durgesh" tittle = "first card"/>
+    //   <hr/>
+    //   <Header name ="ravi "  tittle= "second card"/>
+    //   <hr/>
+    //   <h1>This is my Project React App</h1>
+    //   <p1>this my paragraph. I am currenly learning react js</p1>
+    //   <p1>because i want to develop application that calls my rest application</p1>
+    //   <Header name ="sagnik" tittle = "Last card"/>
+    //   <hr/>
+    //   <Header name="varsha" tittle= "Footer"/>
+
+    // </div>
+    
+
+     <div style = {{background:"yellow", padding: 20, width : 400}}>
+                <h1>{tittle}</h1>
+               <h1> {name}</h1>
+               <p1> this is my program
+               </p1>
+               <p1> i would like you give you a deep expressions.
+               </p1>
+          </div>
+
+
+
+
+          <h1> This is bootstrap Components</h1>
+  <Button  color="warning" outline onClick={btnHandle}>
+     First React Buttonm
+  </Button>
+
+
+
+
+App.js
+
+  import React from "react";
+import logo from './logo.svg';
+import './App.css';
+import { Button } from 'reactstrap';
+import {ToastContainer, toast} from "react-toastify";
+
+import Home from "./components/Home";
+import Course from "./components/Course";
+import AllCourses from "./components/AllCourses";
+import AddCourse from "./components/AddCourse";
+
+
+function App() {
+     
+   const  btnHandle= () => {
+     toast.success("Done", {
+       position: "top-center"
+      });
+   };
+
+  return ( <div>
+       <ToastContainer/>
+        <Home></Home>
+        
+        <AllCourses />
+        <AddCourse/>
+        <hr/>
+         <AddCourse/>
+  </div> 
+  );
+};
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+ 
+
